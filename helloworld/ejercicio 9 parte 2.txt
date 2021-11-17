@@ -1,0 +1,33 @@
+<!Doctype html>
+<html lang="es">
+<head>
+     <title>Paguina de Menu</title>
+</head>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+    <body>
+       <h2>Contactanos</h2>
+
+<table style="width:100%">
+  <tr>
+    <td><img src="https://m.media-amazon.com/images/I/61aTywrhyBS._AC_SY355_.jpg"></td>
+      <td><a href="https://m.media-amazon.com/images/I/61aTywrhyBS._AC_SY355_.jpg">Email</a></td>
+    <td><b>nombre</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://m.media-amazon.com/images/I/61aTywrhyBS._AC_SY355_.jpg"></td>
+    <td><a href="https://m.media-amazon.com/images/I/61aTywrhyBS._AC_SY355_.jpg">Telefono</a></td>
+    <td>900 900 900</td>
+  </tr>
+  <tr>
+    <td><img src="https://m.media-amazon.com/images/I/61aTywrhyBS._AC_SY355_.jpg"></td>
+    <td><a href="https://m.media-amazon.com/images/I/61aTywrhyBS._AC_SY355_.jpg">Fax</a></td>
+    <td>900.900.900</td>
+  </tr>
+</table>
+
+        </body>
+</html>
