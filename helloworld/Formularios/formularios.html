@@ -1,90 +1,98 @@
-<html>    
-    
-<head><title>Ejemplo de Formularios sencillos</title>
-<body>
-    
-    <h3>Formularios muy sencillo</h3>
-    
-    <form action="https://ptsv2.com/t/smx2m08/post" method="post"></form>
-        
-               
-    <!--Filset-->
-        
-<fieldset style="width:20%">
-    <legend>Datos de la Persona</legend>
-  <!--Nombre -->
-        
-       <label>Escribe tu nombre</label> 
-        
-    <input type="text" name="nombre" value="" />
-        <input type="hidden" name="nombre_secreto" value="nombre_secreto" checked /> 
-        <br/>
-    <label>Escribe tu Apellido</label>
-        
-    <input type="text" name="apellido" value="" />
-        <input type="hidden" name="nombre_secreto" value="nombre_secreto" checked /> 
-        <br/>
-        
-        
-    <label>Escribe tu DNI</label>
-        
-    <input type="text" name="DNI" value="" />
-        <input type="hidden" name="nombre_secreto" value="nombre_secreto" checked /> 
-        <br/>
-    
-    <label>Introducce tu curriculum</label><br/>
-    <textarea  id="Descripcion" name="Descripcion" rows="5" cols="40" style="width:400px; height:50px; background: red"></textarea>
-    
-    <label for="so">sistema operativo</label>
-    <select id="so" name="so">
-    <option value="Windows">Windows</option>
-        <option value="Ubuntu">Ubuntu</option>
-        <option value="Cotxe">Cotxe</option>
-    </select>
-        
-      <label for="so">sistema operativo</label>
-    <select id="so" name="so">
-    <option value="Windows">Windows</option>
-        <option value="Ubuntu">Ubuntu</option>
-        <option value="Cotxe">Cotxe</option>
-        </select>  
-    
-      <label for="so">sistema operativo</label>
-    <select id="so" name="so">
-    <option value="Windows">Windows</option>
-        <option value="Ubuntu">Ubuntu</option>
-        <option value="Cotxe">Cotxe</option>
-    
-    </select>
-        
-        </fieldset>   
-        
-         <!--Coontrasenya-->
-        <label>Escribe la contyrasenya</label>
-           <input type="password" name="nombre" value="" /><br/>
-        
-         <!--Checks con los Puestos de trabjo-->
-        
+<!DOCTYPE html>
 
-        <label>Puestos de trabajo</label> <br/>
-           <input name="puesto_directivo" type="checkbox" value="Empleado" checked /> Empleado
-        <br/>
-         <input name="puesto_directivo" type="checkbox" value="Lampista" /> Lampista
-        <br/>
-         <input name="puesto_directivo" type="checkbox" value="Tecnic" /> Tecnico
-        <br/>
-        
-         <!--Radio button-->
-        
-        <label>Seleccion de coches</label><br/>
-        
-        <input type="radio" name="cotxes" value="Mercedes" /> Mercedes
-           <input type="radio" name="cotxes" value="BMW" /> BMW
-           <input type="radio" name="cotxes" value="Dacia" checked /> Dacia
-        <br/>
+<html lang="es">
+      <meta charset="UTF-8">  
+<head>
 
-        
-    <input type="submit" value="enviar" />
-       
-    
+      <title>formulario</title>
+
+</head>
+ 
+ <body>
+     
+    <h2>Curriculum</h2>
+
+<fieldset style="width: 25%;">
+      
+<form action="https://ptsv2.com/t/smx2c"method="post">  
+     <style>
+       #tipo1 {background-color: red;}
+       #tipo2 {background-color: yellow;}
+       #tipo3 {background-color: aqua;}
+       #tipo4 {background-color: orangered;}
+     </style>
+      <fieldset id="tipo1" style="width: 70%;">
+           
+      <br> Escribe tu nombre <br/>
+      
+      <input type="hidden" name="nombre secreto" value="nombre secreto" />
+      <input type="text" name="nombre" value=""/>
+      <br>Altura<br/>
+      <input type="number"/>
+      <br> Fecha de nacimineto <br/>
+      <input type="date"/>
+      
+      
+      <br>Gmail<br/>
+      <input type="email"/>
+
+      </fieldset>
+
+
+      <fieldset id="tipo2" style="width: 70%;">
+      <br> Idiomas <br/>
+     
+      <input name="Idiomas" type="checkbox" value="Catalan" /> Catalan
+      
+      
+      <input name="Idiomas" type="checkbox" value="Castellano" /> Castellano
+      
+      
+      <input name="Idiomas" type="checkbox" value="Ingles" /> Ingles
+
+
+      <input name="Idiomas" type="checkbox" value="mandarin" /> Mandarin
+      </fieldset>  
+      <fieldset id="tipo3" style="width: 70%;">
+      <br> Nacioanalidad<br/>
+
+      <input type="radio" name="Nacioanalidad" value="España" />España
+      <input type="radio" name="Nacioanalidad" value="Peru" /> Peru
+      <input type="radio" name="Nacioanalidad" value="Colombia" checked="checkbox" /> Colombia      
+</fieldset>
+
+<fieldset id="tipo4" style="width: 70%;">
+      <br><label for="so">Estudios</label>
+      <br>
+      <select name="so" id="so">
+            <option value="" selected="selected">-  Estudios -</option>
+            <option value="ESO">ESO</option>  
+            <option value="GM">GM</option>
+            <option value="GS">GS</option>
+            <option value="BACH">BACH</option>            
+
+
+
+      </select>
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<input type="submit" value="enviar">
+<input type="submit" value="cancelar">
+<br/>
+</fieldset>
+
+</form>
+
+     </fieldset>
     </body>
+</html>
